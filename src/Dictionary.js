@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "./Results";
 import "./Dictionary.css";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
+  let [results, setResults] = useState(null);
+  //everytime the state changes it's going render again with a new data. Basically, we want the definition to change everytime the result does so therefore we create a state called results.
 
   function handleResponse(response) {
-    console.log(response.data);
+    console.log(response.data[0]);
+    setResults(response.data[0]);
   }
 
   function search(event) {
@@ -29,6 +33,7 @@ export default function Dictionary() {
         <input type="search" onChange={handleKeywordChange} />{" "}
         {/* To know the value what it's searching we must add usestate^ So whenever a person types or changes a word it's going to be the handleKeywordChange function*/}
       </form>
+      <Results results={results} />
     </div>
   );
 }
