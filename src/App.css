@@ -1,9 +1,11 @@
 
 .App-header{
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     font: bolder;
     font-weight: 400px;
+    color:navy;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .App-Footer{
@@ -12,4 +14,15 @@
     font:bolder;
     font-size: 16px;
     
+}
+.App-logo{
+    max-width: 60px;
+    display:block;
+    margin:0 auto;
+}
+body{
+    background: rgb(213, 232, 247);
+}
+a{
+    color:blue;
 }
