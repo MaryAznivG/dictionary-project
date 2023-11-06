@@ -17,7 +17,7 @@ export default function App() {
         <footer className="App-Footer">
           This project was coded by{" "}
           <a
-            href="href=https://www.linkedin.com/in/aznivgalstyan/"
+            href="https://www.linkedin.com/in/aznivgalstyan/"
             target="_blank"
             rel="noopener noreferrer"
           >
